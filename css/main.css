@@ -1,19 +1,25 @@
 @import url('https://fonts.googleapis.com/css2?family=Reem+Kufi&display=swap');
 
+* {
+    box-sizing: border-box;
+}
+
 html {
 	font-family: 'Reem Kufi', sans-serif;
 	overflow-x: hidden; 
+
+	height: 100vh;
+	width: 100vw;
 }
 
 body {
-	height: 100vh;
-	width: 100vw;
-	background-color: #e5bcbb;
-	background-image: linear-gradient(19deg, #e5bcbb 0%, #DDD6F3 100%);
+	background-color: #000000;
+	background-image: url(/img/bg.png);
 
-	background-size: cover; /* Розтягуємо зображення */
-	background-position: center; /* Центруємо зображення */
-	background-attachment: fixed; /* Фон не рухається при прокручуванні */
+
+	background-size: cover;
+	background-position: center;
+	background-attachment: fixed; 
 }
 
 .mainBtn {
@@ -28,110 +34,82 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+
+	padding-top: 5vw;
+	padding-bottom: 30vw;
 }
 #headerLogo {
 	width: 70vw;
+	padding: 30px;
+	border-radius: 30px;
+	background-color: rgba(255, 255, 255, 0.5);
+}
+
+main {
+	padding: 25px 25px 25px 25px;
+	width: 100vw;
+	border-radius: 100px 100px 30px 30px;
+	background-color: rgba(255, 255, 255, 0.85);
 }
 
 a {
 	color: #626262;
-	text-decoration: none; /* Убирает подчеркивание */
+	text-decoration: none;
 
 }
 a:hover {
 	color: #0d0d0d;
 }
 
-/* Telegram */
-#telegram {
-	background: linear-gradient(45deg, #0088CC, #00A6E4);  
-}
-#telegram:hover {
-	background: linear-gradient(45deg, #006699, #007FAA);  
-}
-
-/* Viber */
-#viber {
-	background: linear-gradient(45deg, #7360F2, #8E78F5);  
-}
-#viber:hover {
-	background: linear-gradient(45deg, #5A46D9, #725AD4);  
+.buttonBox {
+	padding: 50px 50px 50px 50px;
+	display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-/* WhatsApp */
-#whatsApp {
-	background: linear-gradient(45deg, #25D366, #38E07E); 
-}
-#whatsApp:hover {
-	background: linear-gradient(45deg, #1DA64F, #2FB065);  
-}
-
-/* Email */
-#email {	
-	background: linear-gradient(45deg, #D44638, #E05A4B);  
-}
-#email:hover {
-	background: linear-gradient(45deg, #B3362B, #C0403A);  
-}
-
-/* Price */
-#price {
-	background: linear-gradient(45deg, #FF9800, #FFC107);  
-}
-#price:hover {
-	background: linear-gradient(45deg, #D97706, #E89E07);  
+.buttonImage {
+	width: 60vw;
+	padding-right: 10vw;
 }
 
 .buttonStyle {
-	background-color: #FFFFFF;
-	border: 1px solid #222222;
-	border-radius: 8px;
-	box-sizing: border-box;
-	color: #d0d0d0;
-	text-shadow: 0 0 5px #342c2c, 0 0 10px #484848, 0 0 15px #9c9c9c, 0 0 20px #fafafa;
+	background-color: #f3f7fe;
+	color: #3b82f6;
+	border: none;
 	cursor: pointer;
-	display: inline-block;
-	font-family: Circular,-apple-system,BlinkMacSystemFont,Roboto,"Helvetica Neue",sans-serif;
-	font-size: 60px;
+	border-radius: 30px;
+	width: 25vw;
+	height: 10vw;
+	transition: 0.3s;
+
+	font-size: 36px;
 	font-weight: 600;
-	line-height: 20px;
-	margin: 0;
-	outline: none;
-	padding: 13px 23px;
-	position: relative;
-	text-align: center;
-	text-decoration: none;
-	touch-action: manipulation;
-	transition: box-shadow .2s,-ms-transform .1s,-webkit-transform .1s,transform .1s;
-	user-select: none;
-	-webkit-user-select: none;
-	height: 10vh;
-	width: 70vw;
 }
 
-.buttonStyle:focus-visible {
-	box-shadow: #222222 0 0 0 2px, rgba(255, 255, 255, 0.8) 0 0 0 4px;
-	transition: box-shadow .2s;
+.buttonStyle:hover {
+	background-color: #3b82f6;
+	box-shadow: 0 0 0 5px #3b83f65f;
+	color: #fff;
 }
 
-.buttonStyle:active {
-	background-color: #F7F7F7;
-	border-color: #000000;
-	transform: scale(.96);
-}
-
-.buttonStyle:disabled {
-	border-color: #DDDDDD;
-	color: #DDDDDD;
-	cursor: not-allowed;
-	opacity: 1;
+#buttonPrice {
+	font-size: 32px;
 }
 
 footer {
 	display:block;
+
+	width: 100vw;
+	padding-top: 5vw;
 }
 
 .contact {
+	width: 100vw;
+
+	border-radius: 30px;
+	background-color: rgba(255, 255, 255, 0.85);
+
 	color: #292828;
 	font-weight: 700;
 
@@ -141,13 +119,13 @@ footer {
 	flex-direction: column;
 
 	font-size: 30px;
-
-	width: 100vw;
-	height: 20vh;
+	height: 40vw;
 }
 
 .map {
-	border: 1px solid black;
+	padding-top: 5vw;
+
+	border: 1px transparent solid;
 	width: 100vw;
-	height: 15vh;
+	height: 30vh;
 }
