@@ -1,0 +1,97 @@
+html {
+	font-family: 'Reem Kufi', sans-serif;
+	overflow-x: hidden; 
+}
+
+body {
+	height: 100vh;
+	width: 100vw;
+	background-color: #e5bcbb;
+	background-image: linear-gradient(19deg, #e5bcbb 0%, #DDD6F3 100%);
+
+	background-size: cover; /* Розтягуємо зображення */
+	background-position: center; /* Центруємо зображення */
+	background-attachment: fixed; /* Фон не рухається при прокручуванні */
+
+    font-size: 14px;
+}
+
+.logotype {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#headerLogo {
+	width: 35vw;
+}
+
+button {
+    background-color: transparent;
+}
+
+.mainBtn {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	height: auto;
+}
+
+.buttonStyle {
+	background: linear-gradient(45deg, #FF9800, #FFC107);  
+	border: 1px solid #222222;
+	border-radius: 8px;
+	box-sizing: border-box;
+	color: #d0d0d0;
+	text-shadow: 0 0 5px #342c2c, 0 0 10px #484848, 0 0 15px #9c9c9c, 0 0 20px #fafafa;
+	cursor: pointer;
+	display: inline-block;
+	font-family: Circular,-apple-system,BlinkMacSystemFont,Roboto,"Helvetica Neue",sans-serif;
+	font-size: 30px;
+	font-weight: 600;
+	line-height: 20px;
+	margin: 0;
+	outline: none;
+	padding: 13px 23px;
+	position: relative;
+	text-align: center;
+	text-decoration: none;
+	touch-action: manipulation;
+	transition: box-shadow .2s,-ms-transform .1s,-webkit-transform .1s,transform .1s;
+	user-select: none;
+	-webkit-user-select: none;
+	height: 10vh;
+	width: 70vw;
+}
+
+.buttonStyle:hover {
+    background: linear-gradient(45deg, #D97706, #E89E07);  
+}
+
+.buttonStyle:focus-visible {
+	box-shadow: #222222 0 0 0 2px, rgba(255, 255, 255, 0.8) 0 0 0 4px;
+	transition: box-shadow .2s;
+}
+
+.buttonStyle:active {
+	background-color: #F7F7F7;
+	border-color: #000000;
+	transform: scale(.96);
+}
+
+.buttonStyle:disabled {
+	border-color: #DDDDDD;
+	color: #DDDDDD;
+	cursor: not-allowed;
+	opacity: 1;
+}
+
+
+.service {
+    margin-bottom: 10px;
+}
+.result {
+    font-size: 14px;
+    font-weight: 700;
+    margin-top: 20px;
+}
