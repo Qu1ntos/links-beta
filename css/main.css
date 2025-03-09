@@ -21,6 +21,10 @@
 		margin: auto;
 		width: 35vw !important;
 	}
+
+	.buttonBox { /* Стилі для контейнерів кнопок */
+		padding: 10px !important;
+	}
 	
 	.buttonImage { /* Зображення біля кнопки */
 		width: 17.5vw !important;
@@ -35,15 +39,18 @@
 	}
 
 	footer { /* Стиль для футера */
+		padding-top: 1vw !important;
 		width: 35vw !important;
 		margin: auto;
 	}
 	
 	.contact { /* Стиль для контейнеру контактів */
-		height: 20vw !important;
+		height: 15vw !important;
+		font-size: 30px !important;
 	}
 	
 	.map { /* Стиль для карти */
+		padding-top: 1vw !important;
 		width: 35vw !important;
 		height: 40vh !important;
 	}
@@ -74,8 +81,8 @@ body {
     justify-content: center;
     align-items: center;
 
-	padding-top: 5vw;
-	padding-bottom: 30vw;
+	padding-top: 15vw;
+	padding-bottom: 15vw;
 }
 
 #headerLogo { /* Фото логотипу */
@@ -92,13 +99,13 @@ body {
 	flex-direction: column;
 	height: auto;
 
-	padding: 25px 25px 25px 25px;
+	padding: 25px;
 	border-radius: 100px 100px 30px 30px;
 	background-color: rgba(255, 255, 255, 0.85);
 }
 
 .buttonBox { /* Стилі для контейнерів кнопок */
-	padding: 50px 50px 50px 50px;
+	padding: 50px;
 	display: flex;
     justify-content: center;
     align-items: center;
@@ -139,7 +146,6 @@ footer { /* Стиль для футера */
 }
 
 .contact { /* Стиль для контейнеру контактів */
-
 	border-radius: 30px;
 	background-color: rgba(255, 255, 255, 0.85);
 
@@ -151,11 +157,12 @@ footer { /* Стиль для футера */
     align-items: center;
 	flex-direction: column;
 
-	font-size: 30px;
+	font-size: 50px;
 	height: 40vw;
 }
 
 .contact a { /* Стиль для посилань у контактах */
+	padding: 10px;
 	color: #626262;
 	text-decoration: none;
 

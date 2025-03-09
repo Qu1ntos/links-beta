@@ -7,24 +7,75 @@
 	html {
 		overflow-x: hidden !important; 
 	}
-	.logotype {
+
+	.logotype { /* Контейнер логотипу */
 		padding-top: 1vw !important;
 		padding-bottom: 1vw !important;
 	}
-	#headerLogo {
+
+	#headerLogo { /* Фото логотипу */
 		width: 20vw !important; 
 	}
 	
-	main {
+	main { /* Стиль для головного контейнеру з цінами і калькулятором цін */
 		margin: auto;
+		margin-top: 0 !important;
 		width: 35vw !important;
 	}
 	
-	.buttonStyle {
+	.buttonStyle { /* Стиль для кнопки */
 		width: 20vw !important;
 		height: 5vw !important;
 	
 		font-size: 24px !important;
+	}
+
+	.result p { /* Контейнер підрахунку (Кінцева сумма) */
+		font-size: 36px !important;
+		font-weight: 500 !important;
+	}
+
+	.reset { /* Кнопка скидання */
+		font-size: 36px !important;
+		width: 15vw !important;
+		height: 5vw !important;
+	}
+
+	.result { 
+		font-size: 30px !important;
+		font-weight: 500 !important;
+	}
+
+	main h1 {
+		font-size: 36px !important;
+	}
+	
+	main h2 {
+		font-size: 30px !important;
+	}
+
+	.service { /* Контейнера послуг */
+		font-size: 30px !important;
+		margin-bottom: 0px !important;
+	}
+
+	.decrement { /* Стиль для кнопок [ - ] */
+		margin-right: 0.5vw !important;
+		font-size: 30px !important;
+		width: 2vw !important;
+		height: 2vw !important;
+	}
+	
+	.increment { /* Стиль для кнопок [ + ] */
+		margin-left: 0.5vw !important;
+		margin-right: 0.5vw !important;
+		font-size: 30px !important;
+		width: 2vw !important;
+		height: 2vw !important;
+	}
+
+	.service span { /* Текст результату в контейнерах послуг */
+		font-size: 30px !important;
 	}
 }
 
@@ -49,7 +100,6 @@ body {
 	background-size: cover;
 	background-position: center;
 	background-attachment: fixed; 
-
 
     font-size: 14px;
 }
@@ -84,11 +134,11 @@ body {
 	border: none;
 	cursor: pointer;
 	border-radius: 30px;
-	width: 60vw;
+	width: 70vw;
 	height: 25vw;
 	transition: 0.3s;
 
-	font-size: 36px;
+	font-size: 60px;
 	font-weight: 600;
 }
 
@@ -99,15 +149,23 @@ body {
 }
 
 main { /* Стиль для головного контейнеру з цінами і калькулятором цін */
-	margin: auto;
+	margin-top: 4vw;
 	background-color: rgba(255, 255, 255, 0.85);
 	border-radius: 30px;
-	padding: 30px 0px 50px 30px;
+	padding: 30px 30px 50px 30px;
+}
+
+main h1 {
+	font-size: 60px;
+}
+
+main h2 {
+	font-size: 50px;
 }
 
 .result { /* Контейнер підрахунку */
 	text-align: center;
-    font-size: 14px;
+	font-size: 60px;
     font-weight: 500;
     margin-top: 20px;
 }
@@ -118,25 +176,39 @@ main { /* Стиль для головного контейнеру з ціна�
 }
 
 .reset { /* Кнопка скидання */
-	font-size: 36px;
-	width: 15vw;
-	height: 3.5vw;
+	border-radius: 15px;
+	font-size: 60px;
+	width: 50vw;
+	height: 15vw;
 }
 
 .service { /* Контейнера послуг */
-	font-size: 24px;
+	font-size: 60px;
     margin-bottom: 10px;
 }
 
-.service span { /* Текст результату */
-	font-size: 24px;
+.service span { /* Текст результату в контейнерах послуг */
+	font-size: 60px;
 }
 
-button { /* Стиль для кнопок [ + ] та [ - ] */
+.decrement { /* Стиль для кнопок [ - ] */
+	border-radius: 5px;
+	margin-right: 2vw;
+	font-size: 40px;
+	width: 5vw;
+	height: 5vw;
     background-color: whitesmoke;
 }
 
-
+.increment { /* Стиль для кнопок [ + ] */
+	border-radius: 5px;
+	margin-left: 2vw;
+	margin-right: 2vw;
+	font-size: 40px;
+	width: 5vw;
+	height: 5vw;
+    background-color: whitesmoke;
+}
 
 .welcome-screen { /* Стиль для вітального екрану */
 	position: fixed;
