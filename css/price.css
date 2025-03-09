@@ -14,7 +14,7 @@ html {
 
 body {
 	background-color: #000000;
-	background-image: url(/links-beta/img/bg.png);
+	background-image: url(/img/bg.png);
 
 	background-size: cover;
 	background-position: center;
@@ -63,7 +63,7 @@ button {
 	border: none;
 	cursor: pointer;
 	border-radius: 30px;
-	width: 90vw;
+	width: 60vw;
 	height: 25vw;
 	transition: 0.3s;
 

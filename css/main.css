@@ -1,5 +1,48 @@
 @import url('https://fonts.googleapis.com/css2?family=Reem+Kufi&display=swap');
 
+@media screen and (min-width: 800px) {
+	.logotype {
+		padding-top: 1vw !important;
+		padding-bottom: 10vw !important;
+	}
+	#headerLogo {
+		width: 20vw !important; 
+	}
+	
+	main {
+		margin: auto;
+		width: 35vw !important;
+	}
+	
+	.buttonImage {
+		width: 17.5vw !important;
+		padding-right: 5vw !important;
+	}
+	
+	.buttonStyle {
+		width: 10vw !important;
+		height: 5vw !important;
+	
+		font-size: 24px !important;
+	}
+
+	footer {
+		width: 35vw !important;
+		margin: auto;
+	}
+	
+	.contact {
+		height: 20vw !important;
+	}
+	
+	.map {
+		width: 35vw !important;
+		height: 40vh !important;
+	}
+}
+
+/*-------------------------------------------------------------------------------------------*/
+
 * {
     box-sizing: border-box;
 }
@@ -7,14 +50,11 @@
 html {
 	font-family: 'Reem Kufi', sans-serif;
 	overflow-x: hidden; 
-
-	height: 100vh;
-	width: 100vw;
 }
 
 body {
 	background-color: #000000;
-	background-image: url(/links-beta/img/bg.png);
+	background-image: url(/img/bg.png);
 
 	background-size: cover;
 	background-position: center;
@@ -46,7 +86,6 @@ body {
 
 main {
 	padding: 25px 25px 25px 25px;
-	width: 100vw;
 	border-radius: 100px 100px 30px 30px;
 	background-color: rgba(255, 255, 255, 0.85);
 }
@@ -98,13 +137,10 @@ a:hover {
 
 footer {
 	display:block;
-
-	width: 100vw;
 	padding-top: 5vw;
 }
 
 .contact {
-	width: 100vw;
 
 	border-radius: 30px;
 	background-color: rgba(255, 255, 255, 0.85);
@@ -125,6 +161,6 @@ footer {
 	padding-top: 5vw;
 
 	border: 1px transparent solid;
-	width: 100vw;
+	width: 98.4vw;
 	height: 30vh;
 }
