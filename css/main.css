@@ -1,9 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Reem+Kufi&display=swap');
 
 @media screen and (min-aspect-ratio: 16/9) {
+	html {
+		overflow-x: hidden !important; 
+	}
 	.logotype {
 		padding-top: 1vw !important;
-		padding-bottom: 10vw !important;
+		padding-bottom: 5vw !important;
 	}
 	#headerLogo {
 		width: 20vw !important; 
@@ -163,4 +166,26 @@ footer {
 	border: 1px transparent solid;
 	width: 98.4vw;
 	height: 30vh;
+}
+
+.welcome-screen {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100vw;
+	height: 100vh;
+	background: white;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	transition: opacity 1s ease-out;
+	z-index: 9999;
+}
+.welcome-screen img {
+	max-width: 50%;
+	max-height: 50%;
+}
+.hidden {
+	opacity: 0;
+	pointer-events: none;
 }
