@@ -17,8 +17,14 @@
 		width: 20vw !important; 
 	}
 	
-	.mainBtn { /* Контейнер з кнопками */
+	.mainBtn { /* Контейнер з кнопками ціни і реквізитів */
 		margin: auto;
+		width: 35vw !important;
+	}
+
+	.linkBtn { /* Контейнер з кнопками відправки */
+		margin: auto;
+		margin-top: 1vw !important;
 		width: 35vw !important;
 	}
 
@@ -26,9 +32,14 @@
 		padding: 10px !important;
 	}
 	
+	.buttonBox span {
+		width: 10vw !important;
+		font-size: 48px !important;
+		margin: 2vw !important;
+	}
+
 	.buttonImage { /* Зображення біля кнопки */
-		width: 17.5vw !important;
-		padding-right: 5vw !important;
+		width: 7.5vw !important;
 	}
 	
 	.buttonStyle { /* Стиль для кнопки */
@@ -92,15 +103,23 @@ body {
 	background-color: rgba(255, 255, 255, 0.5);
 }
 
-.mainBtn { /* Контейнер з кнопками */
+.mainBtn { /* Контейнер з кнопками ціни і реквізитів */
+	padding: 25px;
+	border-radius: 100px 100px 30px 30px;
+	background-color: rgba(255, 255, 255, 0.85);
+}
+
+.linkBtn { /* Контейнер з кнопками */
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	flex-direction: column;
 	height: auto;
 
+	margin-top: 5vw;
+
 	padding: 25px;
-	border-radius: 100px 100px 30px 30px;
+	border-radius: 30px 30px 30px 30px;
 	background-color: rgba(255, 255, 255, 0.85);
 }
 
@@ -111,9 +130,17 @@ body {
     align-items: center;
 }
 
-.buttonImage { /* Зображення біля кнопки */
-	width: 60vw;
-	padding-right: 10vw;
+.buttonBox span {
+	width: 30vw;
+	text-align: center;
+	font-size: 60px;
+	font-weight: 700;
+	margin: 40px;
+}
+
+.buttonImage { /* Зображення біля кнопок */
+	width: 20vw;
+	padding: 10px;
 }
 
 .buttonStyle { /* Стиль для кнопки */
