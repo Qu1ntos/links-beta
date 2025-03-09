@@ -1,78 +1,75 @@
-@import url('https://fonts.googleapis.com/css2?family=Reem+Kufi&display=swap');
+/* CSS для головної сторінки */
 
-@media screen and (min-aspect-ratio: 16/9) {
+/*Підєднання шрифта*/
+@import url('https://fonts.googleapis.com/css2?family=Alegreya+Sans:ital,wght@0,100;0,300;0,400;0,500;0,700;0,800;0,900;1,100;1,300;1,400;1,500;1,700;1,800;1,900&display=swap'); 
+
+@media screen and (min-aspect-ratio: 16/9) { /*Адаптивність під ПК та екрани 16х9*/
 	html {
 		overflow-x: hidden !important; 
 	}
-	.logotype {
+
+	.logotype { /* Контейнер логотипу */
 		padding-top: 1vw !important;
 		padding-bottom: 5vw !important;
 	}
-	#headerLogo {
+
+	#headerLogo { /* Фото логотипу */
 		width: 20vw !important; 
 	}
 	
-	main {
+	.mainBtn { /* Контейнер з кнопками */
 		margin: auto;
 		width: 35vw !important;
 	}
 	
-	.buttonImage {
+	.buttonImage { /* Зображення біля кнопки */
 		width: 17.5vw !important;
 		padding-right: 5vw !important;
 	}
 	
-	.buttonStyle {
+	.buttonStyle { /* Стиль для кнопки */
 		width: 10vw !important;
 		height: 5vw !important;
 	
 		font-size: 24px !important;
 	}
 
-	footer {
+	footer { /* Стиль для футера */
 		width: 35vw !important;
 		margin: auto;
 	}
 	
-	.contact {
+	.contact { /* Стиль для контейнеру контактів */
 		height: 20vw !important;
 	}
 	
-	.map {
+	.map { /* Стиль для карти */
 		width: 35vw !important;
 		height: 40vh !important;
 	}
 }
 
-/*-------------------------------------------------------------------------------------------*/
+/* Загальний CSS */
 
 * {
     box-sizing: border-box;
 }
 
 html {
-	font-family: 'Reem Kufi', sans-serif;
+	font-family: "Alegreya Sans", sans-serif;
 	overflow-x: hidden; 
 }
 
 body {
 	background-color: #000000;
-	background-image: url(/img/bg.png);
+	background-image: url(/links-beta/img/bg.png);
 
 	background-size: cover;
 	background-position: center;
 	background-attachment: fixed; 
 }
 
-.mainBtn {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	flex-direction: column;
-	height: auto;
-}
-
-.logotype {
+.logotype { /* Контейнер логотипу */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -80,41 +77,39 @@ body {
 	padding-top: 5vw;
 	padding-bottom: 30vw;
 }
-#headerLogo {
+
+#headerLogo { /* Фото логотипу */
 	width: 70vw;
 	padding: 30px;
 	border-radius: 30px;
 	background-color: rgba(255, 255, 255, 0.5);
 }
 
-main {
+.mainBtn { /* Контейнер з кнопками */
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	height: auto;
+
 	padding: 25px 25px 25px 25px;
 	border-radius: 100px 100px 30px 30px;
 	background-color: rgba(255, 255, 255, 0.85);
 }
 
-a {
-	color: #626262;
-	text-decoration: none;
-
-}
-a:hover {
-	color: #0d0d0d;
-}
-
-.buttonBox {
+.buttonBox { /* Стилі для контейнерів кнопок */
 	padding: 50px 50px 50px 50px;
 	display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.buttonImage {
+.buttonImage { /* Зображення біля кнопки */
 	width: 60vw;
 	padding-right: 10vw;
 }
 
-.buttonStyle {
+.buttonStyle { /* Стиль для кнопки */
 	background-color: #f3f7fe;
 	color: #3b82f6;
 	border: none;
@@ -134,16 +129,16 @@ a:hover {
 	color: #fff;
 }
 
-#buttonPrice {
+#buttonPrice { /* Окремий стиль для кнопки з цінами */
 	font-size: 32px;
 }
 
-footer {
+footer { /* Стиль для футера */
 	display:block;
 	padding-top: 5vw;
 }
 
-.contact {
+.contact { /* Стиль для контейнеру контактів */
 
 	border-radius: 30px;
 	background-color: rgba(255, 255, 255, 0.85);
@@ -160,7 +155,16 @@ footer {
 	height: 40vw;
 }
 
-.map {
+.contact a { /* Стиль для посилань у контактах */
+	color: #626262;
+	text-decoration: none;
+
+}
+.contact a:hover {
+	color: #0d0d0d;
+}
+
+.map { /* Стиль для карти */
 	padding-top: 5vw;
 
 	border: 1px transparent solid;
@@ -168,7 +172,7 @@ footer {
 	height: 30vh;
 }
 
-.welcome-screen {
+.welcome-screen { /* Стиль для вітального екрану */
 	position: fixed;
 	top: 0;
 	left: 0;
@@ -181,11 +185,11 @@ footer {
 	transition: opacity 1s ease-out;
 	z-index: 9999;
 }
-.welcome-screen img {
+.welcome-screen img { /* Логотип в вітальному екрані */
 	max-width: 50%;
 	max-height: 50%;
 }
-.hidden {
+.hidden { /* Стиль для закритого вітального екрану */
 	opacity: 0;
 	pointer-events: none;
 }

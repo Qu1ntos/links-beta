@@ -1,5 +1,7 @@
 document.addEventListener('DOMContentLoaded', () => {
     const services = document.querySelectorAll('.service');
+    const resetButton = document.querySelector('.reset');
+    const finalResult = document.getElementById('final-result');
 
     services.forEach(service => {
         const incrementButton = service.querySelector('.increment');
@@ -34,6 +36,14 @@ document.addEventListener('DOMContentLoaded', () => {
             const price = parseInt(service.querySelector('.quantity').dataset.price);
             total += quantity * price;
         });
-        document.getElementById('final-result').textContent = total;
+        finalResult.textContent = total;
     }
+
+    resetButton.addEventListener('click', () => {
+        services.forEach(service => {
+            service.querySelector('.quantity').textContent = '0';
+            service.querySelector('.result').textContent = '== 0 грн';
+        });
+        finalResult.textContent = '0';
+    });
 });
