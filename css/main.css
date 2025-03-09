@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Reem+Kufi&display=swap');
 
-@media screen and (min-width: 800px) {
+@media screen and (min-aspect-ratio: 16/9) {
 	.logotype {
 		padding-top: 1vw !important;
 		padding-bottom: 10vw !important;
